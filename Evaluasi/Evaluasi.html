@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="icon" type="image/png" href="../img/Logo-website.png">
+        <title>Evaluasi – Virtual Laboratory</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="../base.css">
+        <link rel="stylesheet" href="Evaluasi.css">
+        <link rel="stylesheet" href="../dialog.css">
+    </head>
+    <body>
+
+        <section class="page plain" id="quiz">
+            <h1 class="judul-evaluasi">Evaluasi</h1>
+
+            <div class="swiper eval-swiper">
+                <div class="swiper-wrapper">
+
+                    <!-- Card 1: Kesimpulan praktikum -->
+                    <div class="swiper-slide">
+                        <div class="card eval-card">
+                            <h2>Kesimpulan Praktikum</h2>
+                            <p>Dari praktikum enzim katalase pada ekstrak hati ayam, kita dapat menyimpulkan:</p>
+                            <ul>
+                                <li><b>Tabung A (kontrol):</b> gelembung gas O<sub>2</sub> banyak dan bara lidi menyala lebih terang, artinya katalase menguraikan H<sub>2</sub>O<sub>2</sub> menjadi H<sub>2</sub>O dan O<sub>2</sub> dengan optimal.</li>
+                                <li><b>Tabung B (asam) &amp; C (basa):</b> gelembung sangat sedikit, karena pH yang terlalu asam atau basa mengubah struktur enzim sehingga aktivitasnya turun.</li>
+                                <li><b>Tabung D (dingin):</b> gelembung sedikit, karena suhu rendah membuat enzim pasif (tidak rusak permanen).</li>
+                                <li><b>Tabung E (panas):</b> hampir tidak ada gelembung, karena suhu tinggi menyebabkan denaturasi enzim.</li>
+                            </ul>
+                            <p><b>Jadi,</b> aktivitas enzim katalase dipengaruhi oleh pH dan suhu, dan bekerja paling baik pada kondisi mendekati optimum.</p>
+                            <div class="row">
+                                <button class="btn" id="btnOke">Oke</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Latihan soal -->
+                    <div class="swiper-slide">
+                        <div class="card eval-card">
+                            <h2>Latihan Soal</h2>
+                            <div id="qs"></div><!-- soal dibuat otomatis oleh Evaluasi.js -->
+                            <div id="score"></div>
+                            <div class="row">
+                                <button class="btn" id="calc">Hitung Skor</button>
+                                <button class="btn alt" onclick="keluar('menu', !!PROGRESS.evaluasiHasil(), 'Kamu belum menyelesaikan evaluasi.')">Kembali ke Main Menu</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+        <script src="../common.js"></script>
+        <script src="Evaluasi.js"></script>
+    </body>
+</html>
