@@ -3,8 +3,8 @@
    ================================================================ */
 :root {
     /* ===== GAMBAR LATAR (path relatif terhadap folder css/) ===== */
-    --bg-lab: url('../img/Background-laboratorium-2.jpeg');          /* background laboratorium (meja + rak) */
-    --bg-panduan: url('../img/Background-Panduan.png'); /* background Panduan*/
+    --bg-lab: url('img/Background-laboratorium-2.jpeg');          /* background laboratorium (meja + rak) */
+    --bg-panduan: url('img/Background-Panduan.png'); /* background Panduan*/
 
     /* ===== WARNA ===== */
     --primary-color: #dbe2f1;
